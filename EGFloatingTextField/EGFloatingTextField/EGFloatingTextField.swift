@@ -168,7 +168,7 @@ public class EGFloatingTextField: UITextField {
         
         var borderColor = self.hasError! ? kDefaultErrorColor : kDefaultInactiveColor
         
-        var textRect = self.textRectForBounds(rect)
+        var textRect = self.borderRectForBounds(rect)
         var context = UIGraphicsGetCurrentContext()
         var borderlines : [CGPoint] = [CGPointMake(0, CGRectGetHeight(textRect) - 1),
             CGPointMake(CGRectGetWidth(textRect), CGRectGetHeight(textRect) - 1)]
